@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+
+  padding: 20px 10px;
+  background: #df5589ff;
+}
+button{
+  padding: 20px 40px;
+  margin: 20px 50px;
+  background: #1abd79;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 20px 0 rgba(28, 146, 241, 0.897), 0 0 10px 0 rgba(28, 48, 54, 0.815);
+}
+button:hover{
+background: transparent;
+  border: 2px solid #1abd79;
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+}
+.git{
+  padding-left: 10px;
+  font-size: 25px;
+}
+.posts-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+}
+.post {
+  flex-basis: 24%;
+  min-width: 350px;
+  height: 450px;
+  background: rgb(0, 0, 0);  
+  overflow: hidden;
+  margin-top: 10px;
+}
+.post .post-img img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+}
+.post .over-lay{
+  position: relative;
+  top: -270px;
+  left: 350px;
+  transition: left 0.4s;
+}
+
+.social-links ion-icon{
+  font-size: 2.5em;
+  display: block;
+  padding-top: 20px;
+  filter: grayscale(100%);
+}
+.social-links ion-icon:hover{
+  filter: none; 
+}
+.social-links #fb{
+  color: #4f65d1ec;
+}
+.social-links #insta{
+  color: rgb(184, 53, 53);
+}
+.social-links #git{
+  color: #7380c2;
+}
+.social-links #wapp{
+  color: #1abd79;
+}
+
+.post:hover .over-lay{
+  left: 280px;
+}
+.post:hover .post-img{
+  filter: blur(1.5px);
+}
+.name-title{
+  position: sticky;
+  bottom: 0;
+  padding: 0 0 15px 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in 0.5s;
+}
+.name-title h3{
+  color: rgb(219, 219, 219);
+  font-size: 24px;
+}
+.name-title h4{
+  color: rgb(114, 23, 23);
+  font-size: 12px;
+}
+.post:hover .name-title{
+  visibility: visible;
+  opacity: 1;
+}
